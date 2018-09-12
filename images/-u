@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+
+    <meta charset="utf-8">
+    <title>The Stanford Natural Language Processing Group </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+
+
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="/static/css/vendor/bootstrap/bootstrap.css">
+
+    <!-- Glyphicons -->
+    <link rel="stylesheet" href="/static/css/vendor/glyphicons/glyphicons.css">
+    <link rel="stylesheet" href="/static/css/vendor/glyphicons/filetypes.css">
+    <link rel="stylesheet" href="/static/css/vendor/glyphicons/social.css">
+
+    <!-- Google Webfonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/static/css/bootstrap-markdown.min.css" type="text/css">
+
+    <!-- LayerSlider styles -->
+    <link rel="stylesheet" href="/static/css/vendor/layerslider/layerslider.css" type="text/css">
+
+    <!-- Grove Styles (switch for different color schemes, e.g. "styles-cleanblue.css") -->
+    <link rel="stylesheet" href="/static/css/styles-cleanred.css" id="grove-styles">
+
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css" type="text/css">
+
+    <!-- table highlighting -->
+    <!--<link rel="stylesheet" href="//cdn.datatables.net/plug-ins/1.10.7/features/searchHighlight/dataTables.searchHighlight.css">-->
+    
+    <!-- site-wide custom css -->
+    <link rel="stylesheet" href="/static/css/nlp.css" id="nlp-styles"> 
+
+    
+
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="css/ie8.css">        
+        <script src="js/vendor/google/html5-3.6-respond-1.1.0.min.js"></script>
+    <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="static/js/vendor/jquery/jquery-1.9.1.min.js"><\/script>')</script>
+    <!-- jQuery with jQuery Easing, and jQuery Transit JS -->
+
+    <!-- LayerSlider from Kreatura Media with Transitions -->
+    <script src="/static/js/vendor/layerslider/greensock.js" type="text/javascript"></script>
+    <script src="/static/js/vendor/layerslider/layerslider.transitions.js" type="text/javascript"></script>
+    <script src="/static/js/vendor/layerslider/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+
+    <!-- Bootstrap Markdown for Blog editing-->
+    <script src="/static/js/markdown.js" type="text/javascript"></script>
+    <script src="/static/js/to-markdown.js" type="text/javascript"></script>
+    <script src="/static/js/bootstrap-markdown.js" type="text/javascript"></script>
+
+    <!-- Grove Layerslider initiation script -->
+    <script src="/static/js/grove-slider.js" type="text/javascript"></script>
+
+    <!-- DataTables.net for publications -->
+    <script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js"></script>
+
+    <!-- highlighting for tables -->
+    <script src="//cdn.datatables.net/plug-ins/1.10.7/features/searchHighlight/dataTables.searchHighlight.min.js"></script>    
+    <script src="http://bartaz.github.io/sandbox.js/jquery.highlight.js"></script>
+    
+</head> 
+<body>
+  
+  <!-- navigation -->
+  <header>
+    <nav class="navbar navbar-default grove-navbar" role="navigation">
+      <div class="container">
+	<div class="navbar-header">
+          <a href="#" class="grove-toggle collapsed" data-toggle="collapse" data-target=".grove-nav">   <i class="glyphicons show_lines"></i>  </a>
+          <img class="navbar-brand navbar-left hidden-xs" src="/static/img/logos/nlp-logo-small.gif">
+          <a class="navbar-brand navbar-left" href="/"><h3 class="hidden-xs">The Stanford Natural Language Processing Group</h3><h3 class="hidden-sm hidden-md hidden-lg hidden-xl">The Stanford NLP Group</h3></a>
+	</div>
+	
+	<div class="navbar-collapse grove-nav collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="/people/">people</a>
+            </li>
+            <li>
+              <a href="/pubs/">publications</a>
+            </li>
+            <li>
+              <a href="/blog/">research blog</a>
+            </li>
+            <li>
+              <a href="/software/">software</a>
+            </li>
+            <li>
+              <a href="/teaching/">teaching</a>
+            </li>
+            <li>
+              <a href="/new_local/">local</a>
+	      <!--<a href="http://nlp.stanford.edu/local/">local</a>-->
+            </li>
+            
+          </ul>
+	</div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+  </header>
+  
+
+
+  <div class="widewrapper">
+    <div id="body_content">	
+      
+
+<!--
+<div class="hidden-xs">
+  <div id="layerslider" style="width: 100%; height: 400px; margin: 0px auto;">
+    <div class="ls-slide" data-ls="transition2d:5;">
+      <img class="ls-bg" src="static/img/slides/red-bg-two.jpg" alt="Slider Background">
+      
+      <img  class="ls-l" src="/static/img/slides/treelstm.png" alt="buffaloTree"
+            style="top:15px; left:800px; box-shadow: 5px 5px 7px 5px rgba(0,0,0,1);"
+            data-ls=" durationin : 2000; delayin : 0; offsetxin: right;  offsetxout: right; ">
+      
+      <div class="ls-l large-caption"
+           style="top:120px; left:20px;"
+           data-ls="delayin: 750; offsetxin: 0; offsetxout: 0;">
+	<a href="/blog/">
+        <div><p class="clean">ACL 2015 Papers:</p></div>
+        <div><p>Clark and Manning on Entity-Centric Coreference</p></div>
+        <div><p>Tai, Socher, and Manning on Tree-LSTMs</p></div>
+	<div><p>and more!</p></div>
+	</a>
+        <div>
+	  <p></p>
+        </div>
+      </div>
+    </div>
+       
+    
+    <div class="ls-slide" data-ls="transition2d:5;">
+      <img class="ls-bg" src="static/img/slides/red-bg-three.jpg" alt="Slider Background">
+
+      <img  class="ls-l" src="/static/img/slides/networksemantics.png" alt="buffaloTree"
+            style="top:15px; left:150px; box-shadow: 5px 5px 5px 2px rgba(0,0,0,1);"
+            data-ls=" durationin : 2000; delayin : 0; offsetxin: right;  offsetxout: right; ">
+
+      <div class="ls-l large-caption"
+           style="top:130px; left:500px;"
+           data-ls="delayin:750; offsetxin: 0; offsetxout: 0;">
+	<a href="/blog/">
+        <div><p class="clean">Check out our newest blog post:</p></div>
+        <div><p>Bowman on learning logical semantics</p></div>
+        <div><p>with recursive neural networks!</p></div>
+	</a>
+      </div>
+    </div>
+
+
+    <div class="ls-slide" data-ls="transition2d:5;">
+      <img class="ls-bg" src="static/img/slides/red-bg-three.jpg" alt="Slider Background">
+      
+      <img  class="ls-l" src="/static/img/slides/gates.jpg"
+            style="top:25px; left:50px;"
+            data-ls="durationin: 2500; offsetxin: left; offsetxout: left;">
+      
+      <div class="ls-l large-caption"
+           style="top:150px; left:750px;"
+           data-ls="delayin: 750; offsetxin: 0; offsetxout: 0;">
+        <div><p>Hoot hoot,</p></div>
+        <div><p>beep beep.</p></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+-->
+
+<div class="widewrapper pagetitle">
+  <div class="container">
+    <h1>Welcome!</h1>
+  </div>
+</div>
+
+
+<div class="widewrapper weak-highlight">
+<div class="container content">
+<div class="row">
+<section class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <h2>The Stanford NLP Group</h2>
+
+        <p>
+The Natural Language Processing Group at Stanford University is a team of faculty, postdocs, programmers and students who work together on algorithms that allow computers to process and understand human languages. Our work ranges from basic research in computational linguistics to key applications in human language technology, and covers areas such as sentence understanding, automatic question answering, machine translation, syntactic parsing and tagging,  sentiment analysis, and models of text and visual scenes, as well as applications of natural language processing to the digital humanities and computational social sciences.
+        </p>
+
+
+        <p>
+          A distinguishing feature of the Stanford NLP Group is our
+          effective combination of sophisticated and deep linguistic
+          modeling and data analysis with innovative probabilistic,
+          machine learning, and deep learning approaches to NLP.  Our research has
+          resulted in state-of-the-art technology for robust,
+          broad-coverage natural-language processing in a number of
+          languages.  We provide a widely used, integrated NLP toolkit,
+	  <a href="/software/corenlp.shtml">Stanford CoreNLP</a>.
+	  Particular technologies include our competition-winning
+          <a href="/software/dcoref.shtml">coreference resolution system</a>;
+	  <a href="/software/lex-parser.shtml">a high speed, high performance neural 
+          network dependency parser</a>;
+          a state-of-the-art <a href="/software/tagger.shtml">part-of-speech tagger</a>;
+          a competition-winning <a href="/software/CRF-NER.html">named entity recognizer</a>;
+          and algorithms for processing Arabic, Chinese, French, German, and Spanish text.
+        </p>
+
+        <p>
+          The Stanford NLP Group includes members of both
+          the <a
+          href="http://linguistics.stanford.edu/">Linguistics
+          Department</a> and the <a
+          href="http://cs.stanford.edu/">Computer Science
+          Department</a>, and is part of the <a
+          href="http://ai.stanford.edu/">Stanford AI
+          Lab</a>.
+	  <!-- and the <a href="http://infolab.stanford.edu/">Stanford InfoLab</a>. -->
+        </p>
+</section>
+
+<section class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+<div class="detail-block">
+<div class="info-block">
+<!--<i class="glyphicons turtle"></i>-->
+<div class="info">
+  <img src="/static/img/group-photo.jpg" class="img-responsive center-block img-thumbnail">
+  <!--<h4 align="right">Upcoming Events</h4>
+
+  <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=500&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=ikfuq278l7n9dvf80vnk5no2t4%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=America%2FLos_Angeles" style="align:center;display:block;border-width:0;" width="400" height="400" frameborder="0" scrolling="no"></iframe>-->
+
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+
+
+<!--
+<div class="widewrapper weak-highlight">
+  <div class="container content">
+    <div class="showroom-controls">
+      <div class="links">Recent Work <i class="verticalSeparator"></i> <a href="portfolio.html">All Work</a></div>
+    </div>
+    <div class="row">
+      <div class="showroom-item col-sm-3">
+        <div class="image">
+          <img style="text-align:center;float:center" src="/static/img/logos/nlp-logo.gif" class="img-responsive" alt="Portfolio Image">
+          <a class="overlay" href="portfolio-inner.html">
+            <i class="glyphicons search"></i>
+            <div class="name">Universal Dependencies</div>
+          </a>
+        </div>
+      </div>
+      <div class="showroom-item col-sm-3">
+        <div class="image">
+	  
+          <img src="/static/img/logos/nlp-logo.gif" class="img-responsive" alt="Portfolio Image">
+          <a class="overlay" href="portfolio-inner.html">
+            <i class="glyphicons search"></i>
+            <div class="name">Semantic Parsing</div>
+          </a>
+        </div>
+      </div>
+      <div class="showroom-item col-sm-3">
+        <div class="image">
+          <img src="/static/img/logos/nlp-logo.gif" class="img-responsive" alt="Portfolio Image">
+          <a class="overlay" href="portfolio-inner.html">
+            <i class="glyphicons search"></i>
+            <div class="name">Deep Learning</div>
+          </a>
+        </div>
+	
+      </div>
+      <div class="showroom-item col-sm-3">
+        <div class="image">
+          <img src="/static/img/logos/nlp-logo.gif" class="img-responsive" alt="Portfolio Image">
+          <a class="overlay" href="portfolio-inner.html">
+            <i class="glyphicons search"></i>
+            <div class="name">Shallow Learning</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="clearfix"></div>
+  </div>
+</div>
+-->
+	  
+
+    </div>
+  </div>
+
+  <footer class="widewrapper footer">
+  <div class="container">
+    
+    <div class="row footer">
+      
+      <div class="col-sm-3">
+        <h4>Stanford NLP Group</h4>
+	Gates Computer Science Building<br>
+	353 Serra Mall<br>
+	Stanford, CA 94305-9020<br>
+	<a href="http://forum.stanford.edu/visitors/directions/gates.php">Directions and Parking</a>
+      </div>
+      
+      
+      <div class="col-sm-3">
+        <div class="indent30">
+          <h4>Affiliated Groups</h4>
+          <ul class="grove-list">
+            <li><a href="http://ai.stanford.edu/">Stanford AI Lab</a></li>
+            <li><a href="http://infolab.stanford.edu/">Stanford InfoLab</a></li>
+            <li><a href="https://www-csli.stanford.edu/">CSLI</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!--
+	 <div class="col-sm-3">
+	 </div> -->
+      
+      <div class="col-sm-3">
+        <div class="indent30">
+          <h4>Connect</h4>
+	  
+	  <!-- <div class="row"> -->
+	  <ul class="grove-list">
+	    <li><a href="http://stackoverflow.com/tags/stanford-nlp">Stack Overflow</a></li>
+	    <li><a href="https://github.com/stanfordnlp/CoreNLP">Github</a></li>
+	    <li><a href="https://twitter.com/stanfordnlp">Twitter</a></li>
+	  </ul>
+	</div>
+      </div>
+      <!--
+	 <div class="row center-block">
+           <a href="https://github.com/stanfordnlp/CoreNLP" class="social github"></a>
+           <a href="https://twitter.com/stanfordnlp" class="social twitter"></a>
+	 </div>
+	 -->
+      
+      <div class="col-sm-3">
+        <div class="indent30">
+	  <h4>Local links</h4>
+	  <div class="small" style="text-align:left">
+	    <a href="/local/nlp_lunch.shtml">NLP lunch</a> &middot; 
+            <a href="http://nlp.stanford.edu/read/">NLP Reading Group</a> <br>
+            <a href="http://ai.stanford.edu/portfolio-view/distinguished-speaker-series">AI Speakers</a> &middot;
+            <a href="/local/calendar.shtml">Calendar</a> <br>
+	    <a href="/javanlp/">JavaNLP</a> (<a href="/nlp/javadoc/javanlp/">javadocs</a>) &middot;
+            <a href="/local/machines.shtml">machines</a> <br>
+            <a href="/local/qa/">Q&amp;A</a>
+	  </div>
+	</div>
+	
+	
+      </div>      
+      
+    </div>
+  </div>
+</div>
+</footer>
+
+  <script src="/static/js/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="/static/js/vendor/modernizr/modernizr.js"></script>
+  
+  
+  <script>
+    $('ul.nav > li > a[href="' + document.location.pathname + '"]').parent().addClass('active');
+</script>
+
+
+
+</body>
+</html>
